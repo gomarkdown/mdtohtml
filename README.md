@@ -1,6 +1,6 @@
 # Markdown to HTML cmd-line tool
 
-If you have Go install, install with:
+If you have Go installed, install with:
 
     go get -u github.com/gomarkdown/mdtohtml
 
