@@ -16,7 +16,7 @@ import (
 const defaultTitle = ""
 
 func main() {
-	var page, toc, xhtml, latex, smartypants, latexdashes, fractions, attributes bool
+	var page, toc, xhtml, latex, smartypants, latexdashes, fractions, attributes, headingIDs bool
 	var css, cpuprofile string
 	var repeat int
 	flag.BoolVar(&page, "page", false,
@@ -41,6 +41,8 @@ func main() {
 		"Process the input multiple times (for benchmarking)")
 	flag.BoolVar(&attributes, "attributes", false,
 		"Enable Block level attributes")
+	flag.BoolVar(&headingIDs, "headingids", false,
+		"Enable Heading IDs")
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, "Markdown Processor "+
 			"\nAvailable at http://github.com/gomarkdown/markdown/cmd/mdtohtml\n\n"+
@@ -106,6 +108,10 @@ func main() {
 
 	if attributes {
 		extensions |= parser.Attributes
+	}
+
+	if headingIDs {
+		extensions |= parser.HeadingIDs
 	}
 
 	var renderer markdown.Renderer
