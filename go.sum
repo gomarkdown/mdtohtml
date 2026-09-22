@@ -1,2 +1,4 @@
 github.com/gomarkdown/markdown v0.0.0-20230922112808-5421fefb8386 h1:EcQR3gusLHN46TAD+G+EbaaqJArt5vHhNpXAa12PQf4=
 github.com/gomarkdown/markdown v0.0.0-20230922112808-5421fefb8386/go.mod h1:JDGcbDT52eL4fju3sZ4TeHGsQwhG9nbDV21aMyhwPoA=
+github.com/gomarkdown/markdown v0.0.0-20260921172736-e177decc3c2f h1:ck73FNcoZSo3IZ1tN2LsUGAf8FGDzeF++NqDSy5EZtM=
+github.com/gomarkdown/markdown v0.0.0-20260921172736-e177decc3c2f/go.mod h1:JDGcbDT52eL4fju3sZ4TeHGsQwhG9nbDV21aMyhwPoA=
